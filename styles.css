@@ -130,114 +130,154 @@ body {
     font-weight: bold;
   }
 
-  @media screen and (max-width: 280px) {
-    .logo-img {
-      margin-left: 2%;
-      width: 50%;
-    }
-    
-    .welcome-section h1 {
-      text-align: center;
-      margin-top: 40%;
-    }
-    
-    .welcome-section .h2-container {
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.877);
-      position: relative;
-      top: 50px;
-    }
-    
-    .welcome-section .paragraph {
-      margin-top: 2%;
-    }
-    
-    .footer {
-      margin-top: 0%;    }
+  
+/* Media queries */
+@media (max-width: 575px) {
+  .logo-img {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+
+  .welcome-section {
+    padding-top: 45%;
   }
   
+  .welcome-section .h2-container {
+    position: static;
+    margin-top: 25%;
+    margin-left: -14%;
+    margin-bottom: -8%;
+    padding: 4%;
+  }
+  
+  .welcome-section .paragraph {
+    padding: 12%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
 
-  @media screen and (max-width: 320px) {
-   
-  
-    .welcome-section {
-      padding: 8%;
-    }
-  
-    .welcome-section h1 {
-      margin-top: 30%;
-      font-size: 1.5rem;
-    }
-  
-    .welcome-section .h2-container {
-        padding: 3% 10% 0 6%;
-        position: relative;
-      }
-      
-      .welcome-section .paragraph {
-        font-size: 0.9rem;
-        padding: 2% 8%;
-        margin-top: -20px;
-        margin-bottom: -5%;
-        margin-left: -10%;
-        margin-right: -10%;
-        position: relative;
-        top: -20px;
-      }
-      
-      
-      
-      
-    
-      .footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-    }
-  
-  
-@media screen and (max-width: 480px) {
-
-    .logo-img {
-        margin-left: 2%;
-      }
-    
-    .welcome-section .h2-container {
-      margin-bottom: 8%; 
-    }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }
-  
-  
-@media screen and (max-width: 768px) {
-    .logo-img {
-      margin: 3%;
-    }
-  
-    .welcome-section {
-      margin-top: 10%;
-      margin-bottom: 3%;
-    }
-  
+
+@media (min-width: 576px) and (max-width: 768px) {
    
-    .welcome-section .h2-container {
-      padding: 3%;
-    }
-  
-    .welcome-section .h2-container .subheading {
-      font-size: 0.7rem;
-    }
-  
-    .welcome-section .paragraph {
-      font-size: 0.75rem;
-      padding: 5%;
-      margin-top: 40%;
-      margin-bottom: -20%;
-      margin-left: -15%;
-      margin-right: -15%;
-    }
-  
-    .footer-text {
-      font-size: 0.8em;
-    }
+.logo-img {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+
+.welcome-section {
+  padding-top: 30%;
+}
+
+.welcome-section .h2-container {
+  position: static;
+  margin-top: 15%;
+  margin-left: -14%;
+  margin-bottom: -8%;
+  padding: 4%;
+}
+
+.welcome-section .paragraph {
+  padding: 10%;
+  margin-top: 0%;
+  margin-bottom: 10%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+   
+  .logo-img {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
+  
+  
+  .welcome-section {
+    padding-top: 20%;
+  }
+  
+  .welcome-section .h2-container {
+    position: static;
+    margin-top: 15%;
+    margin-left: -14%;
+    margin-bottom: -8%;
+    padding: 4%;
+  }
+  
+  .welcome-section .paragraph {
+    padding: 8%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1205px) {
+
+    
+  .logo-img {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  
+  
+  .welcome-section {
+    padding-top: 20%;
+  }
+  
+  .welcome-section .h2-container {
+    position: static;
+    margin-top: 15%;
+    margin-left: -14%;
+    margin-bottom: -8%;
+    padding: 4%;
+  }
+  
+  .welcome-section .paragraph {
+    padding: 8%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+
+
+/* Flexbox */
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+  
